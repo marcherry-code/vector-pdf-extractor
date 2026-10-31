@@ -1,0 +1,259 @@
+{
+  "$defs": {
+    "BBox": {
+      "properties": {
+        "x0": {
+          "title": "X0",
+          "type": "number"
+        },
+        "y0": {
+          "title": "Y0",
+          "type": "number"
+        },
+        "x1": {
+          "title": "X1",
+          "type": "number"
+        },
+        "y1": {
+          "title": "Y1",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x0",
+        "y0",
+        "x1",
+        "y1"
+      ],
+      "title": "BBox",
+      "type": "object"
+    },
+    "Room": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "area_m2": {
+          "description": "Area computed from wall geometry",
+          "title": "Area M2",
+          "type": "number"
+        },
+        "label_area_m2": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Area printed on the drawing",
+          "title": "Label Area M2"
+        },
+        "area_check": {
+          "enum": [
+            "ok",
+            "mismatch",
+            "no_label"
+          ],
+          "title": "Area Check",
+          "type": "string"
+        },
+        "counts": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Counts",
+          "type": "object"
+        },
+        "duct_length_m": {
+          "default": 0.0,
+          "title": "Duct Length M",
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "area_m2",
+        "area_check"
+      ],
+      "title": "Room",
+      "type": "object"
+    },
+    "Sheet": {
+      "properties": {
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "size_pt": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Size Pt",
+          "type": "array"
+        },
+        "scale_pt_per_m": {
+          "title": "Scale Pt Per M",
+          "type": "number"
+        },
+        "layers": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "description": "Vector paths per CAD layer",
+          "title": "Layers",
+          "type": "object"
+        },
+        "rooms": {
+          "items": {
+            "$ref": "#/$defs/Room"
+          },
+          "title": "Rooms",
+          "type": "array"
+        },
+        "symbols": {
+          "items": {
+            "$ref": "#/$defs/Symbol"
+          },
+          "title": "Symbols",
+          "type": "array"
+        },
+        "totals": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "Bill of quantities for the sheet",
+          "title": "Totals",
+          "type": "object"
+        },
+        "unclassified_groups": {
+          "title": "Unclassified Groups",
+          "type": "integer"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "source",
+        "page",
+        "size_pt",
+        "scale_pt_per_m",
+        "layers",
+        "rooms",
+        "symbols",
+        "totals",
+        "unclassified_groups"
+      ],
+      "title": "Sheet",
+      "type": "object"
+    },
+    "Symbol": {
+      "properties": {
+        "id": {
+          "description": "Stable id, e.g. 'outlet-007'",
+          "title": "Id",
+          "type": "string"
+        },
+        "type": {
+          "description": "Symbol type from the rules file",
+          "title": "Type",
+          "type": "string"
+        },
+        "layer": {
+          "title": "Layer",
+          "type": "string"
+        },
+        "bbox": {
+          "$ref": "#/$defs/BBox"
+        },
+        "center": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Center",
+          "type": "array"
+        },
+        "room": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Room the symbol centre lies in",
+          "title": "Room"
+        },
+        "length_m": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Measured length for linear items (ducts)",
+          "title": "Length M"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "layer",
+        "bbox",
+        "center"
+      ],
+      "title": "Symbol",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "sheets": {
+      "items": {
+        "$ref": "#/$defs/Sheet"
+      },
+      "title": "Sheets",
+      "type": "array"
+    }
+  },
+  "required": [
+    "sheets"
+  ],
+  "title": "ExtractionResult",
+  "type": "object"
+}

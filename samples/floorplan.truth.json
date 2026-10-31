@@ -1,0 +1,36 @@
+{
+  "pt_per_m": 40.0,
+  "rooms": {
+    "LIVING ROOM": {
+      "area_m2": 96,
+      "outlet": 4,
+      "light": 2,
+      "diffuser": 1
+    },
+    "KITCHEN": {
+      "area_m2": 96,
+      "outlet": 6,
+      "light": 2,
+      "diffuser": 1
+    },
+    "BEDROOM": {
+      "area_m2": 60,
+      "outlet": 3,
+      "light": 1,
+      "diffuser": 1
+    },
+    "BATHROOM": {
+      "area_m2": 36,
+      "outlet": 1,
+      "light": 1,
+      "diffuser": 0
+    },
+    "OFFICE": {
+      "area_m2": 48,
+      "outlet": 5,
+      "light": 2,
+      "diffuser": 1
+    }
+  },
+  "duct_length_m": 26.0
+}

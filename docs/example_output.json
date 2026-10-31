@@ -1,0 +1,639 @@
+{
+  "schema_version": "1.0",
+  "sheets": [
+    {
+      "source": "floorplan.pdf",
+      "page": 1,
+      "size_pt": [
+        1191.0,
+        842.0
+      ],
+      "scale_pt_per_m": 40.0,
+      "layers": {
+        "A-DOOR": 8,
+        "A-TTLB": 1,
+        "A-WALL": 8,
+        "E-LITE": 24,
+        "E-POWER": 57,
+        "M-HVAC": 15
+      },
+      "rooms": [
+        {
+          "name": "LIVING ROOM",
+          "area_m2": 96.0,
+          "label_area_m2": 96.0,
+          "area_check": "ok",
+          "counts": {
+            "outlet": 4,
+            "light": 2,
+            "diffuser": 1
+          },
+          "duct_length_m": 11.8
+        },
+        {
+          "name": "KITCHEN",
+          "area_m2": 96.0,
+          "label_area_m2": 96.0,
+          "area_check": "ok",
+          "counts": {
+            "outlet": 6,
+            "light": 2,
+            "diffuser": 1
+          },
+          "duct_length_m": 11.8
+        },
+        {
+          "name": "BEDROOM",
+          "area_m2": 60.0,
+          "label_area_m2": 60.0,
+          "area_check": "ok",
+          "counts": {
+            "diffuser": 1,
+            "outlet": 3,
+            "light": 1
+          },
+          "duct_length_m": 1.2
+        },
+        {
+          "name": "BATHROOM",
+          "area_m2": 36.0,
+          "label_area_m2": 36.0,
+          "area_check": "ok",
+          "counts": {
+            "outlet": 1,
+            "light": 1
+          },
+          "duct_length_m": 0.0
+        },
+        {
+          "name": "OFFICE",
+          "area_m2": 48.0,
+          "label_area_m2": 48.0,
+          "area_check": "ok",
+          "counts": {
+            "diffuser": 1,
+            "outlet": 5,
+            "light": 2
+          },
+          "duct_length_m": 1.2
+        }
+      ],
+      "symbols": [
+        {
+          "id": "outlet-001",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 345.0,
+            "y0": 141.0,
+            "x1": 355.0,
+            "y1": 151.0
+          },
+          "center": [
+            350.0,
+            146.0
+          ],
+          "room": "LIVING ROOM",
+          "length_m": null
+        },
+        {
+          "id": "outlet-002",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 625.0,
+            "y0": 141.0,
+            "x1": 635.0,
+            "y1": 151.0
+          },
+          "center": [
+            630.0,
+            146.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "outlet-003",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 705.0,
+            "y0": 141.0,
+            "x1": 715.0,
+            "y1": 151.0
+          },
+          "center": [
+            710.0,
+            146.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "outlet-004",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 785.0,
+            "y0": 141.0,
+            "x1": 795.0,
+            "y1": 151.0
+          },
+          "center": [
+            790.0,
+            146.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "outlet-005",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 865.0,
+            "y0": 141.0,
+            "x1": 875.0,
+            "y1": 151.0
+          },
+          "center": [
+            870.0,
+            146.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "outlet-006",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 121.0,
+            "y0": 205.0,
+            "x1": 131.0,
+            "y1": 215.0
+          },
+          "center": [
+            126.0,
+            210.0
+          ],
+          "room": "LIVING ROOM",
+          "length_m": null
+        },
+        {
+          "id": "light-001",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 222.0,
+            "y0": 282.0,
+            "x1": 238.0,
+            "y1": 298.0
+          },
+          "center": [
+            230.0,
+            290.0
+          ],
+          "room": "LIVING ROOM",
+          "length_m": null
+        },
+        {
+          "id": "light-002",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 462.0,
+            "y0": 282.0,
+            "x1": 478.0,
+            "y1": 298.0
+          },
+          "center": [
+            470.0,
+            290.0
+          ],
+          "room": "LIVING ROOM",
+          "length_m": null
+        },
+        {
+          "id": "light-003",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 742.0,
+            "y0": 282.0,
+            "x1": 758.0,
+            "y1": 298.0
+          },
+          "center": [
+            750.0,
+            290.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "light-004",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 902.0,
+            "y0": 282.0,
+            "x1": 918.0,
+            "y1": 298.0
+          },
+          "center": [
+            910.0,
+            290.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "outlet-007",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 569.0,
+            "y0": 285.0,
+            "x1": 579.0,
+            "y1": 295.0
+          },
+          "center": [
+            574.0,
+            290.0
+          ],
+          "room": "LIVING ROOM",
+          "length_m": null
+        },
+        {
+          "id": "outlet-008",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 1049.0,
+            "y0": 285.0,
+            "x1": 1059.0,
+            "y1": 295.0
+          },
+          "center": [
+            1054.0,
+            290.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "outlet-009",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 121.0,
+            "y0": 365.0,
+            "x1": 131.0,
+            "y1": 375.0
+          },
+          "center": [
+            126.0,
+            370.0
+          ],
+          "room": "LIVING ROOM",
+          "length_m": null
+        },
+        {
+          "id": "diffuser-001",
+          "type": "diffuser",
+          "layer": "M-HVAC",
+          "bbox": {
+            "x0": 341.0,
+            "y0": 381.0,
+            "x1": 359.0,
+            "y1": 399.0
+          },
+          "center": [
+            350.0,
+            390.0
+          ],
+          "room": "LIVING ROOM",
+          "length_m": null
+        },
+        {
+          "id": "diffuser-002",
+          "type": "diffuser",
+          "layer": "M-HVAC",
+          "bbox": {
+            "x0": 821.0,
+            "y0": 381.0,
+            "x1": 839.0,
+            "y1": 399.0
+          },
+          "center": [
+            830.0,
+            390.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "duct-001",
+          "type": "duct",
+          "layer": "M-HVAC",
+          "bbox": {
+            "x0": 150.0,
+            "y0": 412.0,
+            "x1": 1030.0,
+            "y1": 498.0
+          },
+          "center": [
+            590.0,
+            455.0
+          ],
+          "room": null,
+          "length_m": 26.0
+        },
+        {
+          "id": "outlet-010",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 945.0,
+            "y0": 429.0,
+            "x1": 955.0,
+            "y1": 439.0
+          },
+          "center": [
+            950.0,
+            434.0
+          ],
+          "room": "KITCHEN",
+          "length_m": null
+        },
+        {
+          "id": "outlet-011",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 729.0,
+            "y0": 485.0,
+            "x1": 739.0,
+            "y1": 495.0
+          },
+          "center": [
+            734.0,
+            490.0
+          ],
+          "room": "BATHROOM",
+          "length_m": null
+        },
+        {
+          "id": "diffuser-003",
+          "type": "diffuser",
+          "layer": "M-HVAC",
+          "bbox": {
+            "x0": 301.0,
+            "y0": 489.0,
+            "x1": 319.0,
+            "y1": 507.0
+          },
+          "center": [
+            310.0,
+            498.0
+          ],
+          "room": "BEDROOM",
+          "length_m": null
+        },
+        {
+          "id": "diffuser-004",
+          "type": "diffuser",
+          "layer": "M-HVAC",
+          "bbox": {
+            "x0": 901.0,
+            "y0": 489.0,
+            "x1": 919.0,
+            "y1": 507.0
+          },
+          "center": [
+            910.0,
+            498.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        },
+        {
+          "id": "outlet-012",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 121.0,
+            "y0": 525.0,
+            "x1": 131.0,
+            "y1": 535.0
+          },
+          "center": [
+            126.0,
+            530.0
+          ],
+          "room": "BEDROOM",
+          "length_m": null
+        },
+        {
+          "id": "outlet-013",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 761.0,
+            "y0": 525.0,
+            "x1": 771.0,
+            "y1": 535.0
+          },
+          "center": [
+            766.0,
+            530.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        },
+        {
+          "id": "light-005",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 822.0,
+            "y0": 562.0,
+            "x1": 838.0,
+            "y1": 578.0
+          },
+          "center": [
+            830.0,
+            570.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        },
+        {
+          "id": "light-006",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 982.0,
+            "y0": 562.0,
+            "x1": 998.0,
+            "y1": 578.0
+          },
+          "center": [
+            990.0,
+            570.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        },
+        {
+          "id": "outlet-014",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 489.0,
+            "y0": 565.0,
+            "x1": 499.0,
+            "y1": 575.0
+          },
+          "center": [
+            494.0,
+            570.0
+          ],
+          "room": "BEDROOM",
+          "length_m": null
+        },
+        {
+          "id": "outlet-015",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 1049.0,
+            "y0": 565.0,
+            "x1": 1059.0,
+            "y1": 575.0
+          },
+          "center": [
+            1054.0,
+            570.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        },
+        {
+          "id": "outlet-016",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 761.0,
+            "y0": 605.0,
+            "x1": 771.0,
+            "y1": 615.0
+          },
+          "center": [
+            766.0,
+            610.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        },
+        {
+          "id": "light-007",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 302.0,
+            "y0": 618.0,
+            "x1": 318.0,
+            "y1": 634.0
+          },
+          "center": [
+            310.0,
+            626.0
+          ],
+          "room": "BEDROOM",
+          "length_m": null
+        },
+        {
+          "id": "light-008",
+          "type": "light",
+          "layer": "E-LITE",
+          "bbox": {
+            "x0": 622.0,
+            "y0": 618.0,
+            "x1": 638.0,
+            "y1": 634.0
+          },
+          "center": [
+            630.0,
+            626.0
+          ],
+          "room": "BATHROOM",
+          "length_m": null
+        },
+        {
+          "id": "outlet-017",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 1049.0,
+            "y0": 645.0,
+            "x1": 1059.0,
+            "y1": 655.0
+          },
+          "center": [
+            1054.0,
+            650.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        },
+        {
+          "id": "outlet-018",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 305.0,
+            "y0": 669.0,
+            "x1": 315.0,
+            "y1": 679.0
+          },
+          "center": [
+            310.0,
+            674.0
+          ],
+          "room": "BEDROOM",
+          "length_m": null
+        },
+        {
+          "id": "outlet-019",
+          "type": "outlet",
+          "layer": "E-POWER",
+          "bbox": {
+            "x0": 905.0,
+            "y0": 669.0,
+            "x1": 915.0,
+            "y1": 679.0
+          },
+          "center": [
+            910.0,
+            674.0
+          ],
+          "room": "OFFICE",
+          "length_m": null
+        }
+      ],
+      "totals": {
+        "outlet": 19.0,
+        "light": 8.0,
+        "diffuser": 4.0,
+        "duct": 1.0,
+        "duct_length_m": 26.0,
+        "floor_area_m2": 336.0
+      },
+      "unclassified_groups": 0,
+      "warnings": []
+    }
+  ]
+}

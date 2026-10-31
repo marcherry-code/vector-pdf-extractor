@@ -1,0 +1,38 @@
+{
+  "description": "Rules for AIA-style layered floor plans: which layers are walls/labels, and how to recognise symbols from their geometry.",
+  "scale_pt_per_m": 40,
+  "tolerance_pt": 1.0,
+  "area_tolerance": 0.01,
+  "min_room_area_m2": 1.0,
+  "wall_layers": ["A-WALL"],
+  "room_label_layers": ["A-ANNO"],
+  "ignore_layers": ["A-DOOR", "A-TTLB", "A-ANNO"],
+  "symbols": [
+    {
+      "type": "outlet",
+      "layers": ["E-POWER"],
+      "min_curves": 4, "min_lines": 2,
+      "max_size": 12
+    },
+    {
+      "type": "light",
+      "layers": ["E-LITE"],
+      "min_curves": 4, "min_lines": 2,
+      "min_size": 12, "max_size": 22
+    },
+    {
+      "type": "diffuser",
+      "layers": ["M-HVAC"],
+      "dashed": false,
+      "min_rects": 1, "min_lines": 2,
+      "max_size": 24, "max_aspect": 1.5
+    },
+    {
+      "type": "duct",
+      "layers": ["M-HVAC"],
+      "dashed": true,
+      "min_rects": 1,
+      "measure": "length"
+    }
+  ]
+}
